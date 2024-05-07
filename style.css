@@ -1,0 +1,265 @@
+body {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("bg.jpg");
+  background-size: cover;
+  /* opacity: 0.7; */
+  background-attachment: fixed; 
+}
+
+.nav{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: auto;
+  height: 50px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  position: sticky;
+  top:10px;
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ); 
+}
+
+.nav-items-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-decoration: none;
+  width: 600px;
+ /* background-color: aliceblue ; */
+  font-size: large;
+  color:white; 
+;
+}
+.dot{margin-left:-7px;}
+
+.itemtag{
+  position: relative;
+}
+
+.linetag{
+  position: absolute;
+  background-color: red;
+  height: 2px;
+  width:0px ;
+  transition: width 1s;
+}
+
+.hovertag:hover .linetag{
+  width:55px;
+}
+
+.logo{
+  text-decoration: none;
+  font-size: xx-large;
+  font-weight: bolder;
+  color:aliceblue
+}
+
+.startbtn{
+  height: 45px;
+  width: 130px;
+  border-radius: 7px;
+  border-style: none;
+  background:transparent;
+  border: 2px  solid yellow;
+  color: aliceblue;
+  outline: none;
+  font-size: medium;
+}
+.dropdown{
+  position: relative;
+}
+
+.dropdown-content{
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  height: 120px;
+  width:0px ;
+  transition: width 1s;
+  padding-top: 5px;
+   background-color: red; 
+  /* align-items: center; */
+  visibility:hidden; 
+  margin-top:px;
+  
+
+}
+
+.dropdown:hover  .dropdown-content{
+  visibility: visible; 
+  width: 100px; 
+}
+
+.link{
+  background-color: rgb(71, 62, 62) ;
+  flex:1;
+  width: 100%;
+  outline: 1px solid rgb(43, 39, 39); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link:hover{
+  background-color: black;
+  height:100%;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.nav a:hover{
+  color:yellow;
+}
+
+.startbtn:hover{
+  background-color: yellow;
+  color: black;
+  /* outline:1px solid yellow; */
+}
+
+.text-container{
+  margin-top: 100px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 440px;
+  align-items: center;  
+}
+
+.text{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+color:white;
+  /* background-color: aliceblue; */
+  /* margin-left: 75px; */
+}
+
+.boxes{
+  width: 70%;
+  height: 150PX;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly ;
+  /* background-color: aliceblue;  */
+  align-items: center;
+  /* margin-left: 75px; */ 
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 150px; 
+  width: 150px;
+  background-color: aliceblue;
+  border: 0.5px solid rgb(155, 148, 148);
+  background:transparent;
+  align-items: center;
+  color: rgb(194, 194, 106);
+  font-size: x-large;
+  transition: border 1s;
+}
+.box a{
+  color: aliceblue;
+  text-shadow: 1px 1px 1px rgb(238, 238, 235);
+}
+
+/* .box{
+  height: 150px; 
+  width: 150px;
+  background:transparent;
+  
+} */
+
+.top{
+  font-size: 65px;
+  font-weight:bolder; 
+  padding-left: 40px;
+}
+
+.middle{
+  font-size: 75px;
+  font-weight:bolder;
+}
+
+.small{
+  font-size: 25px;
+  padding-left: 25px;
+  letter-spacing: 1px;
+  text-align: justify;
+  
+}
+.box:hover, .facebook:hover  {
+  border-color:yellow;
+  color: yellow;
+}
+
+.free-text{
+background-image:url("https://media.istockphoto.com/id/1401272450/photo/white-abstract.jpg?s=1024x1024&w=is&k=20&c=W5q4d0Uu4hE6V55bKDBrMf8xwuI4T7TXtOycoG4BKpo=") ;
+width: auto;
+height: 500px;
+/* line-height: 10px; */
+margin-top: 50px;
+}
+
+.bottom-container{
+  width: auto;
+  height: 500px;
+  background-color: rgb(250, 250, 250);
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.inside-container{
+  width: 1060px;
+  height: 360px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-in-left{
+  width: 500px;
+  height: 360px;
+  background-color: skyblue; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container-in-right{
+  width: 500px;
+  height: 360px;
+  background-color: skyblue;
+  display: flex;
+  justify-content: flex-end;
+ }
+  
+
+.sc{
+  width: auto ;
+  height:100px;
+  background-color: rgb(6, 16, 20);
+
+} 
+
+.container-in-right{
+  background-image: url("main.jpg");
+  background-position: right;
+  background-size: contain;
+  display: flex;    
+} 
+ 
+
+
+
+
+
+
+
+     */
